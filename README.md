@@ -58,7 +58,7 @@ Gradio приложение с удобным интерфейсом:
 ```python main.py```
 
 ## Структура проекта
-
+```
 car_price_/
 ├── api/
 │   ├── main.py              #FastAPI сервер
@@ -81,6 +81,7 @@ car_price_/
 ├── history.db               #база данных SQLite
 ├── requirements.txt         #основные зависимости
 └── README.md               #документация
+```
 
 ## Запуск приложения
 Выполните команду:
@@ -120,6 +121,7 @@ car_price_/
   "year": 2020,
   "power": 249
 }```
+```
 
 Ответ:
 
@@ -128,6 +130,7 @@ car_price_/
   "currency": "RUB",
   "log_price": 14.731
 }```
+```
 
 **Расчет кредита**
 ```POST /calculate_credit```
@@ -138,8 +141,10 @@ car_price_/
   "loan_term_months": 60,
   "interest_rate": 8.5
 }```
+```
 
 Ответ:
+```
 
 ```{
   "monthly_payment": 16364.52,
@@ -147,11 +152,13 @@ car_price_/
   "total_payment": 1181871.2,
   "overpayment_percent": 22.73
 }```
+```
 
 **Получение истории**
 ```GET /history?limit=10&offset=0```
 
 Ответ:
+```
 
 ```[
   {
@@ -169,6 +176,7 @@ car_price_/
     "predicted_price": 2500000.0
   }
 ]```
+```
 
 ##Метрики и качество##
 
